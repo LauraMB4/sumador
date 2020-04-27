@@ -15,7 +15,10 @@ public class ASumar {
 			return (string + " = " + string);
 		if (string.charAt(0)=='-')
 			return null;
-		return (string + " = " + total(string));
+		
+		String cad = null;
+		cad = string.replaceAll("(?!^|$)", " + ");
+			 return (cad + " = " + total(string));
 	}
 
 	public int total(String valor_inicial) {
