@@ -6,7 +6,11 @@ public class ASumar {
 		// TODO Auto-generated method stub
 		String total = string;
 		
-		return (string + " = " + total);
+		if (string.length()==1)  
+			return (string + " = " + total);
+		if (string.charAt(0)=='-')
+			return null;
+		return total;
 	}
 
 }
